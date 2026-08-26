@@ -1,0 +1,286 @@
+(function () {
+  var WA = {
+    pt: "https://wa.me/5511973701295?text=" + encodeURIComponent("Olá! Vi o portfólio da Lopes Web Studio e gostaria de agendar uma conversa."),
+    en: "https://wa.me/5511973701295?text=" + encodeURIComponent("Hi! I saw Lopes Web Studio's portfolio and would like to book a call."),
+    es: "https://wa.me/5511973701295?text=" + encodeURIComponent("¡Hola! Vi el portafolio de Lopes Web Studio y me gustaría agendar una llamada.")
+  };
+
+  var dict = {
+    pt: {
+      metaTitle: "Lopes Web Studio — Apps, Sistemas e SaaS",
+      metaDesc: "Construímos apps, sistemas e SaaS sob medida. Portfólio de 12+ projetos lançados. Design, código e estratégia em um só estúdio.",
+      menuCaption: "Apps, sistemas e SaaS — do conceito à operação.",
+      menuPromo: "Olá! Sou Daniel Lopes. Construímos produtos digitais completos, com arquitetura sólida e foco em receita.",
+      navPortfolio: "Portfólio",
+      navProcess: "Processo",
+      navTestimonials: "Depoimentos",
+      navFaq: "FAQ",
+      navContact: "Contato",
+      sayHello: "Agendar conversa",
+      heroCaption: "Agência de apps e sistemas · Portfólio comprovado",
+      heroTitle: "Daniel Lopes",
+      available: "Disponível para novos projetos",
+      years: "Projetos<br>lançados",
+      projects: "Dias para<br>um MVP",
+      scroll: "Ver projetos",
+      portfolio: "Portfólio",
+      seeAll: "Ver sites",
+      p1name: "laudos técnicos de vistoria com IA",
+      p2name: "plataforma de vendas conversacionais",
+      p3name: "gestão para salões e barbearias",
+      marquee: "Do conceito à operação",
+      s1title: "Produto de ponta a ponta",
+      s1text: "Discovery, wireframes, design system, backend, frontend, deploy e monitoramento — tudo no mesmo time.",
+      s2title: "Stack moderna e escalável",
+      s2text: "Next.js, React, Node, PostgreSQL, Supabase, Stripe — tecnologias que investidores e usuários confiam.",
+      s3title: "Foco em receita desde o dia 1",
+      s3text: "Integração de pagamentos, onboarding otimizado e métricas de conversão embutidas no produto.",
+      problemEyebrow: "O desafio",
+      problemTitle: "Você tem a ideia. Falta quem execute com excelência.",
+      pr1t: "Freelancers que somem no meio do projeto",
+      pr1d: "Você investiu meses e o produto ficou incompleto — sem documentação, sem testes, sem visão de produto.",
+      pr2t: "Agências genéricas que entregam template",
+      pr2d: "Recebeu um site bonito, mas sem arquitetura escalável, sem integrações e sem estratégia de monetização.",
+      pr3t: "Equipe interna cara e lenta",
+      pr3d: "Contratar devs sênior, designers e PMs custa R$ 80k+/mês — e ainda leva 6 meses para o primeiro release.",
+      manifest: "Na Lopes Web Studio, cada app e sistema nasce com arquitetura sólida, UX que converte e stack moderna — incluindo SaaS prontos para escalar.",
+      myWorks: "Ver projetos",
+      startProject: "Iniciar meu projeto",
+      rotating: "Vamos começar um projeto * Vamos começar um projeto * ",
+      processEyebrow: "Como funciona",
+      processTitle: "Do briefing ao lançamento em 3 passos",
+      st1t: "Discovery & Estratégia",
+      st1d: "Mapeamos seu mercado, definimos MVP, personas e modelo de receita. Você sai com roadmap claro.",
+      st2t: "Design & Desenvolvimento",
+      st2d: "Sprints quinzenais com demos ao vivo. Design system, código limpo e testes automatizados.",
+      st3t: "Launch & Escala",
+      st3d: "Deploy em produção, monitoramento, onboarding de usuários e suporte pós-lançamento por 30 dias.",
+      testimonials: "Depoimentos",
+      testimonialsTitle: "Quem construiu conosco",
+      testimonialsDesc: "Clientes que confiaram no estúdio para tirar o produto do papel e colocar no ar.",
+      faq: "FAQ",
+      faqTitle: "Perguntas frequentes",
+      q1: "Quanto tempo leva para lançar um MVP?",
+      a1: "Nosso prazo médio é de 60 a 90 dias para um MVP completo com autenticação, pagamentos e dashboard. Projetos mais complexos são estimados no discovery.",
+      q2: "Vocês ficam com equity do produto?",
+      a2: "Não. O código, design e propriedade intelectual são 100% seus. Trabalhamos por projeto ou retainer mensal — sem equity.",
+      q3: "Qual stack vocês utilizam?",
+      a3: "Next.js, React, TypeScript, Node.js, PostgreSQL (Supabase), Stripe, Vercel e AWS. Escolhemos a stack ideal para cada produto.",
+      q4: "E depois do lançamento?",
+      a4: "Incluímos 30 dias de suporte pós-lançamento. Depois, oferecemos planos de manutenção e evolução contínua do produto.",
+      q5: "Atendem fora do Brasil?",
+      a5: "Sim. Trabalhamos com clientes em Portugal, EUA e LATAM. Comunicação em português, inglês ou espanhol.",
+      ctaTitle: "Pronto para construir seu app ou sistema?",
+      ctaBtn: "Agendar minha conversa gratuita",
+      footerHome: "Início",
+      footerAbout: "Processo",
+      footerWorks: "Portfólio",
+      footerServices: "Solução",
+      footerInsights: "Depoimentos",
+      footerContact: "Contato",
+      subscribe: "Fale com a gente:",
+      subscribeCta: "WhatsApp",
+      ecosystem: "Ecosistema",
+      rights: "Todos os direitos reservados."
+    },
+    en: {
+      metaTitle: "Lopes Web Studio — Apps, Systems & SaaS",
+      metaDesc: "We build custom apps, systems, and SaaS. Portfolio of 12+ launched projects. Design, code, and strategy in one studio.",
+      menuCaption: "Apps, systems, and SaaS — from concept to operations.",
+      menuPromo: "Hi! I'm Daniel Lopes. We build complete digital products, with solid architecture and a revenue focus.",
+      navPortfolio: "Portfolio",
+      navProcess: "Process",
+      navTestimonials: "Testimonials",
+      navFaq: "FAQ",
+      navContact: "Contact",
+      sayHello: "Book a call",
+      heroCaption: "Apps & systems agency · Proven portfolio",
+      heroTitle: "Daniel Lopes",
+      available: "Available for new projects",
+      years: "Shipped<br>products",
+      projects: "Days to<br>an MVP",
+      scroll: "See projects",
+      portfolio: "Portfolio",
+      seeAll: "Visit sites",
+      p1name: "AI-powered inspection reports",
+      p2name: "conversational sales platform",
+      p3name: "management for salons and barbershops",
+      marquee: "From concept to operations",
+      s1title: "End-to-end product",
+      s1text: "Discovery, wireframes, design system, backend, frontend, deploy, and monitoring — all on the same team.",
+      s2title: "Modern, scalable stack",
+      s2text: "Next.js, React, Node, PostgreSQL, Supabase, Stripe — technologies investors and users trust.",
+      s3title: "Revenue focus from day one",
+      s3text: "Payment integrations, optimized onboarding, and conversion metrics built into the product.",
+      problemEyebrow: "The challenge",
+      problemTitle: "You have the idea. You need a team that executes with excellence.",
+      pr1t: "Freelancers who disappear mid-project",
+      pr1d: "You invested months and the product stayed incomplete — no docs, no tests, no product vision.",
+      pr2t: "Generic agencies that ship templates",
+      pr2d: "You got a pretty site, but no scalable architecture, no integrations, and no monetization strategy.",
+      pr3t: "Expensive, slow in-house teams",
+      pr3d: "Hiring senior engineers, designers, and PMs costs $15k+/month — and still takes 6 months to the first release.",
+      manifest: "At Lopes Web Studio, every app and system ships with solid architecture, converting UX, and a modern stack — including SaaS ready to scale.",
+      myWorks: "See projects",
+      startProject: "Start my project",
+      rotating: "Let's start a new project * Let's start a new project * ",
+      processEyebrow: "How it works",
+      processTitle: "From briefing to launch in 3 steps",
+      st1t: "Discovery & Strategy",
+      st1d: "We map your market, define MVP, personas, and revenue model. You leave with a clear roadmap.",
+      st2t: "Design & Development",
+      st2d: "Biweekly sprints with live demos. Design system, clean code, and automated tests.",
+      st3t: "Launch & Scale",
+      st3d: "Production deploy, monitoring, user onboarding, and 30 days of post-launch support.",
+      testimonials: "Testimonials",
+      testimonialsTitle: "Who built with us",
+      testimonialsDesc: "Clients who trusted the studio to take the product from idea to production.",
+      faq: "FAQ",
+      faqTitle: "Frequently asked questions",
+      q1: "How long does it take to launch an MVP?",
+      a1: "Our average timeline is 60–90 days for a full MVP with auth, payments, and a dashboard. More complex projects are estimated during discovery.",
+      q2: "Do you take equity in the product?",
+      a2: "No. Code, design, and IP are 100% yours. We work per project or monthly retainer — no equity.",
+      q3: "What stack do you use?",
+      a3: "Next.js, React, TypeScript, Node.js, PostgreSQL (Supabase), Stripe, Vercel, and AWS. We pick the ideal stack for each product.",
+      q4: "What happens after launch?",
+      a4: "We include 30 days of post-launch support. Afterwards, we offer maintenance and continuous product evolution plans.",
+      q5: "Do you work outside Brazil?",
+      a5: "Yes. We work with clients in Portugal, the US, and LATAM. Communication in Portuguese, English, or Spanish.",
+      ctaTitle: "Ready to build your app or system?",
+      ctaBtn: "Book my free call",
+      footerHome: "Home",
+      footerAbout: "Process",
+      footerWorks: "Portfolio",
+      footerServices: "Solution",
+      footerInsights: "Testimonials",
+      footerContact: "Contact",
+      subscribe: "Talk to us:",
+      subscribeCta: "WhatsApp",
+      ecosystem: "Ecosystem",
+      rights: "All rights reserved."
+    },
+    es: {
+      metaTitle: "Lopes Web Studio — Apps, Sistemas y SaaS",
+      metaDesc: "Construimos apps, sistemas y SaaS a medida. Portafolio de más de 12 proyectos lanzados. Diseño, código y estrategia en un solo estudio.",
+      menuCaption: "Apps, sistemas y SaaS — del concepto a la operación.",
+      menuPromo: "¡Hola! Soy Daniel Lopes. Construimos productos digitales completos, con arquitectura sólida y foco en ingresos.",
+      navPortfolio: "Portafolio",
+      navProcess: "Proceso",
+      navTestimonials: "Testimonios",
+      navFaq: "FAQ",
+      navContact: "Contacto",
+      sayHello: "Agendar llamada",
+      heroCaption: "Agencia de apps y sistemas · Portafolio comprobado",
+      heroTitle: "Daniel Lopes",
+      available: "Disponible para nuevos proyectos",
+      years: "Proyectos<br>lanzados",
+      projects: "Días para<br>un MVP",
+      scroll: "Ver proyectos",
+      portfolio: "Portafolio",
+      seeAll: "Ver sitios",
+      p1name: "informes técnicos de inspección con IA",
+      p2name: "plataforma de ventas conversacionales",
+      p3name: "gestión para salones y barberías",
+      marquee: "Del concepto a la operación",
+      s1title: "Producto de punta a punta",
+      s1text: "Discovery, wireframes, design system, backend, frontend, deploy y monitoreo — todo en el mismo equipo.",
+      s2title: "Stack moderna y escalable",
+      s2text: "Next.js, React, Node, PostgreSQL, Supabase, Stripe — tecnologías en las que confían inversores y usuarios.",
+      s3title: "Enfoque en ingresos desde el día 1",
+      s3text: "Integración de pagos, onboarding optimizado y métricas de conversión integradas en el producto.",
+      problemEyebrow: "El desafío",
+      problemTitle: "Tienes la idea. Falta quien ejecute con excelencia.",
+      pr1t: "Freelancers que desaparecen a mitad del proyecto",
+      pr1d: "Invertiste meses y el producto quedó incompleto — sin documentación, sin tests, sin visión de producto.",
+      pr2t: "Agencias genéricas que entregan plantillas",
+      pr2d: "Recibiste un sitio bonito, pero sin arquitectura escalable, sin integraciones y sin estrategia de monetización.",
+      pr3t: "Equipo interno caro y lento",
+      pr3d: "Contratar seniors, diseñadores y PMs cuesta miles al mes — y aún así lleva 6 meses al primer release.",
+      manifest: "En Lopes Web Studio, cada app y sistema nace con arquitectura sólida, UX que convierte y stack moderna — incluyendo SaaS listos para escalar.",
+      myWorks: "Ver proyectos",
+      startProject: "Iniciar mi proyecto",
+      rotating: "Empecemos un proyecto * Empecemos un proyecto * ",
+      processEyebrow: "Cómo funciona",
+      processTitle: "Del briefing al lanzamiento en 3 pasos",
+      st1t: "Discovery y estrategia",
+      st1d: "Mapeamos tu mercado, definimos MVP, personas y modelo de ingresos. Terminas con un roadmap claro.",
+      st2t: "Diseño y desarrollo",
+      st2d: "Sprints quincenales con demos en vivo. Design system, código limpio y tests automatizados.",
+      st3t: "Lanzamiento y escala",
+      st3d: "Deploy en producción, monitoreo, onboarding de usuarios y soporte post-lanzamiento por 30 días.",
+      testimonials: "Testimonios",
+      testimonialsTitle: "Quién construyó con nosotros",
+      testimonialsDesc: "Clientes que confiaron en el estudio para sacar el producto del papel y ponerlo en el aire.",
+      faq: "FAQ",
+      faqTitle: "Preguntas frecuentes",
+      q1: "¿Cuánto tiempo lleva lanzar un MVP?",
+      a1: "Nuestro plazo medio es de 60 a 90 días para un MVP completo con autenticación, pagos y dashboard. Proyectos más complejos se estiman en el discovery.",
+      q2: "¿Se quedan con equity del producto?",
+      a2: "No. El código, diseño y propiedad intelectual son 100% tuyos. Trabajamos por proyecto o retainer mensual — sin equity.",
+      q3: "¿Qué stack utilizan?",
+      a3: "Next.js, React, TypeScript, Node.js, PostgreSQL (Supabase), Stripe, Vercel y AWS. Elegimos la stack ideal para cada producto.",
+      q4: "¿Y después del lanzamiento?",
+      a4: "Incluimos 30 días de soporte post-lanzamiento. Después, ofrecemos planes de mantenimiento y evolución continua del producto.",
+      q5: "¿Atienden fuera de Brasil?",
+      a5: "Sí. Trabajamos con clientes en Portugal, EE. UU. y LATAM. Comunicación en portugués, inglés o español.",
+      ctaTitle: "¿Listo para construir tu app o sistema?",
+      ctaBtn: "Agendar mi llamada gratuita",
+      footerHome: "Inicio",
+      footerAbout: "Proceso",
+      footerWorks: "Portafolio",
+      footerServices: "Solución",
+      footerInsights: "Testimonios",
+      footerContact: "Contacto",
+      subscribe: "Habla con nosotros:",
+      subscribeCta: "WhatsApp",
+      ecosystem: "Ecosistema",
+      rights: "Todos los derechos reservados."
+    }
+  };
+
+  function detectLocale() {
+    var path = (location.pathname || "/").replace(/\/+$/, "") || "/";
+    if (path === "/en" || path.indexOf("/en/") === 0) return "en";
+    if (path === "/es" || path.indexOf("/es/") === 0) return "es";
+    if (path === "/pt" || path.indexOf("/pt/") === 0) return "pt";
+    var q = new URLSearchParams(location.search).get("lang");
+    if (q === "en" || q === "es" || q === "pt") return q;
+    return "pt";
+  }
+
+  var locale = detectLocale();
+  var t = dict[locale] || dict.pt;
+  var htmlLang = locale === "pt" ? "pt-BR" : locale;
+
+  document.documentElement.lang = htmlLang;
+  document.documentElement.setAttribute("data-locale", locale);
+
+  document.querySelectorAll("[data-i18n]").forEach(function (el) {
+    var key = el.getAttribute("data-i18n");
+    if (t[key] != null) el.textContent = t[key];
+  });
+
+  document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+    var key = el.getAttribute("data-i18n-html");
+    if (t[key] != null) el.innerHTML = t[key];
+  });
+
+  document.querySelectorAll("[data-i18n-wa]").forEach(function (el) {
+    el.setAttribute("href", WA[locale]);
+  });
+
+  document.querySelectorAll(".lws-langs a").forEach(function (a) {
+    a.classList.toggle("is-active", a.getAttribute("data-lang") === locale);
+  });
+
+  if (t.metaTitle) document.title = t.metaTitle;
+  var desc = document.querySelector('meta[name="description"]');
+  if (desc && t.metaDesc) desc.setAttribute("content", t.metaDesc);
+  var ogTitle = document.querySelector('meta[property="og:title"]');
+  if (ogTitle && t.metaTitle) ogTitle.setAttribute("content", t.metaTitle);
+  var ogDesc = document.querySelector('meta[property="og:description"]');
+  if (ogDesc && t.metaDesc) ogDesc.setAttribute("content", t.metaDesc);
+
+  document.documentElement.classList.remove("i18n-pending");
+})();

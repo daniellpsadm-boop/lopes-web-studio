@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr" class="i18n-pending">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Lopes Web Studio — Apps, Sistemas e SaaS</title>
+    <meta name="description" content="Construímos apps, sistemas e SaaS sob medida. Portfólio de 12+ projetos lançados. Design, código e estratégia em um só estúdio.">
+    <meta name="author" content="Lopes Web Studio">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="icon" href="/imagens/logo-menu.webp" type="image/webp">
+    <link rel="apple-touch-icon" href="/imagens/logo-menu.webp">
+    <meta property="og:title" content="Lopes Web Studio — Apps, Sistemas e SaaS">
+    <meta property="og:description" content="Construímos apps, sistemas e SaaS sob medida. Portfólio de 12+ projetos lançados.">
+    <meta property="og:url" content="https://dev.lopeswebstudio.com.br">
+    <meta property="og:image" content="/imagens/nova-foto.png">
+    <link rel="stylesheet" type="text/css" href="/css/loaders/loader.css">
+    <link rel="stylesheet" type="text/css" href="/css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FAF7F6">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#161616">
+    <meta name="msapplication-navbutton-color" content="#161616">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <script>
+      (function () {
+        var p = location.pathname.replace(/\/+$/, "") || "/";
+        var l = (p === "/en" || p.indexOf("/en/") === 0) ? "en" : (p === "/es" || p.indexOf("/es/") === 0) ? "es" : "pt";
+        var q = new URLSearchParams(location.search).get("lang");
+        if (q === "en" || q === "es" || q === "pt") l = q;
+        document.documentElement.lang = l === "pt" ? "pt-BR" : l;
+        document.documentElement.setAttribute("data-locale", l);
+        if (l === "pt") document.documentElement.classList.remove("i18n-pending");
+      })();
+    </script>
+  </head>
+
+  <body>
+
+    <div id="loader" class="loader">
+      <div class="loader__wrapper">
+        <div class="loader__content">
+          <div class="loader__count">
+            <span class="count__text">0</span>
+            <span class="count__percent">%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="mxd-nav__wrap" data-lenis-prevent="">
+      <div class="mxd-nav__contain loading__fade">
+        <a href="#0" class="mxd-nav__hamburger" aria-label="Menu">
+          <div class="hamburger__base"></div>
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+        </a>
+      </div>
+
+      <div class="mxd-menu__wrapper">
+        <div class="mxd-menu__base"></div>
+        <div class="mxd-menu__contain">
+          <div class="mxd-menu__inner">
+            <div class="mxd-menu__left">
+              <p class="mxd-menu__caption menu-fade-in" data-i18n="menuCaption">Apps, sistemas e SaaS — do conceito à operação.</p>
+              <div class="main-menu">
+                <nav class="main-menu__content">
+                  <ul id="main-menu" class="main-menu__accordion">
+                    <li class="main-menu__item">
+                      <a class="main-menu__link btn btn-anim" href="#portfolio">
+                        <span class="btn-caption" data-i18n="navPortfolio">Portfólio</span>
+                      </a>
+                    </li>
+                    <li class="main-menu__item">
+                      <a class="main-menu__link btn btn-anim" href="#processo">
+                        <span class="btn-caption" data-i18n="navProcess">Processo</span>
+                      </a>
+                    </li>
+                    <li class="main-menu__item">
+                      <a class="main-menu__link btn btn-anim" href="#depoimentos">
+                        <span class="btn-caption" data-i18n="navTestimonials">Depoimentos</span>
+                      </a>
+                    </li>
+                    <li class="main-menu__item">
+                      <a class="main-menu__link btn btn-anim" href="#faq">
+                        <span class="btn-caption" data-i18n="navFaq">FAQ</span>
+                      </a>
+                    </li>
+                    <li class="main-menu__item">
+                      <a class="main-menu__link btn btn-anim" href="#contato" data-i18n-wa>
+                        <span class="btn-caption" data-i18n="navContact">Contato</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="mxd-menu__right">
+              <div class="menu-promo">
+                <div class="menu-promo__content">
+                  <p class="menu-promo__caption menu-fade-in" data-i18n="menuPromo">Olá! Sou Daniel Lopes. Construímos produtos digitais completos, com arquitetura sólida e foco em receita.</p>
+                  <div class="menu-promo__video">
+                    <img class="menu-promo__photo" src="/imagens/nova-foto.png" alt="Daniel — fundador da Lopes Web Studio">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mxd-menu__data menu-fade-in">
+              <p class="t-xsmall">Lopes Web Studio</p>
+              <p class="t-xsmall"><i class="ph ph-copyright"></i> 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header id="header" class="mxd-header">
+      <div class="mxd-header__logo loading__fade">
+        <a href="/" class="mxd-logo" aria-label="Lopes Web Studio">
+          <img class="mxd-logo__brand" src="/imagens/logo-menu.webp" alt="Lopes Web Studio">
+        </a>
+      </div>
+      <div class="mxd-header__controls loading__fade">
+        <nav class="lws-langs" aria-label="Language">
+          <a href="/" data-lang="pt">PT</a>
+          <a href="/en" data-lang="en">EN</a>
+          <a href="/es" data-lang="es">ES</a>
+        </nav>
+        <button id="color-switcher" class="mxd-color-switcher" type="button" role="switch" aria-label="light/dark mode" aria-checked="true"></button>
+        <a class="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right-up" href="https://wa.me/5511973701295?text=Ol%C3%A1!%20Vi%20o%20portf%C3%B3lio%20da%20Lopes%20Web%20Studio%20e%20gostaria%20de%20agendar%20uma%20conversa." data-i18n-wa target="_blank" rel="noopener" aria-label="WhatsApp">
+          <span class="btn-caption" data-i18n="sayHello">Agendar conversa</span>
+          <i class="ph-bold ph-arrow-up-right"></i>
+        </a>
+      </div>
+    </header>
+
+    <main id="mxd-page-content" class="mxd-page-content">
+
+      <div class="mxd-section">
+        <div class="mxd-hero-09">
+          <div class="mxd-hero-09__wrap loading-wrap">
+            <div class="mxd-hero-09__headline">
+              <div class="hero-09-headline__caption loading__item">
+                <p data-i18n="heroCaption">Agência de apps e sistemas · Portfólio comprovado</p>
+              </div>
+              <div class="hero-09-headline__title loading__item">
+                <h1 class="hero-09-headline__hidden">Daniel Lopes</h1>
+                <p class="hero-09-wordmark hero-09-svg-mobile">Daniel<br>Lopes</p>
+                <p class="hero-09-wordmark hero-09-svg-desktop">Daniel Lopes</p>
+              </div>
+              <div class="hero-09-headline__tags loading__fade">
+                <span class="tag tag-default tag-outline">Next.js</span>
+                <span class="tag tag-default tag-outline">React</span>
+                <span class="tag tag-default tag-outline">TypeScript</span>
+                <span class="tag tag-default tag-outline">Node</span>
+                <span class="tag tag-default tag-outline">Supabase</span>
+                <span class="tag tag-default tag-outline">Stripe</span>
+                <span class="tag tag-default tag-outline">WhatsApp</span>
+                <span class="tag tag-default tag-outline">PWA</span>
+                <span class="tag tag-default tag-outline">SaaS</span>
+                <span class="tag tag-default tag-outline">IA</span>
+                <span class="tag tag-default tag-outline">Vercel</span>
+                <span class="tag tag-default tag-outline">Electron</span>
+              </div>
+            </div>
+            <div class="mxd-hero-09__objects">
+              <div class="hero-09-objects__image loading__item">
+                <img class="mxd-move" src="/imagens/nova-foto.png" alt="Daniel — fundador da Lopes Web Studio">
+              </div>
+              <div class="hero-09-objects__item item-01 loading__item">
+                <div class="mxd-counter horizontal">
+                  <p id="stats-counter-1" class="mxd-counter__number mxd-stats-number xsmall">0</p>
+                  <p class="mxd-counter__descr t-140 t-bright t-small" data-i18n-html="years">Projetos<br>lançados</p>
+                </div>
+              </div>
+              <div class="hero-09-objects__item item-02 loading__item">
+                <div class="mxd-counter horizontal">
+                  <p id="stats-counter-2" class="mxd-counter__number mxd-stats-number xsmall">0</p>
+                  <p class="mxd-counter__descr t-140 t-bright t-small" data-i18n-html="projects">Dias para<br>um MVP</p>
+                </div>
+              </div>
+              <div class="hero-09-objects__item item-03 loading__item">
+                <div class="mxd-hero__mark">
+                  <span class="mark-icon"></span>
+                  <span class="mark-text" data-i18n="available">Disponível para novos projetos</span>
+                </div>
+              </div>
+            </div>
+            <div class="mxd-hero-09__more loading__fade">
+              <a class="btn btn-line-default btn-anim slide-down" href="#portfolio">
+                <span class="btn-caption" data-i18n="scroll">Ver projetos</span>
+                <i class="ph-bold ph-arrow-elbow-right-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="portfolio" class="mxd-section padding-hero-09 padding-grid-pre-mtext">
+        <div class="mxd-container grid-container">
+          <div class="mxd-block">
+            <div class="mxd-pinned-projects">
+              <div class="container-fluid px-0">
+                <div class="row gx-0">
+                  <div class="col-12 col-xl-5 mxd-pinned-projects__static">
+                    <div class="mxd-pinned-projects__static-inner no-margin">
+                      <div class="mxd-section-title no-margin-desktop">
+                        <div class="container-fluid p-0">
+                          <div class="row g-0">
+                            <div class="col-12 mxd-grid-item no-margin">
+                              <div class="mxd-section-title__title">
+                                <h2 class="h2-large reveal-type" data-i18n="portfolio">Portfólio</h2>
+                              </div>
+                            </div>
+                            <div class="col-12 mxd-grid-item no-margin">
+                              <div class="mxd-section-title__controls anim-uni-in-up">
+                                <a class="btn btn-anim btn-default btn-outline slide-right-up" href="https://voicereportapp.com/" target="_blank" rel="noopener">
+                                  <span class="btn-caption" data-i18n="seeAll">Ver sites</span>
+                                  <i class="ph-bold ph-arrow-up-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-xl-7 mxd-pinned-projects__scroll">
+                    <div class="mxd-pinned-projects__scroll-inner mxd-grid-item no-margin">
+                      <div class="mxd-project-item">
+                        <a class="mxd-project-item__media anim-uni-in-up" href="https://voicereportapp.com/" target="_blank" rel="noopener">
+                          <div class="mxd-project-item__preview preview-image-voice parallax-img-small"></div>
+                          <div class="mxd-project-item__tags">
+                            <span class="tag tag-default tag-permanent">Next.js</span>
+                            <span class="tag tag-default tag-permanent">IA</span>
+                            <span class="tag tag-default tag-permanent">PWA</span>
+                          </div>
+                        </a>
+                        <div class="mxd-project-item__promo">
+                          <div class="mxd-project-item__name">
+                            <a class="anim-uni-in-up" href="https://voicereportapp.com/" target="_blank" rel="noopener"><span>Voice Report</span> <span data-i18n="p1name">laudos técnicos de vistoria com IA</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mxd-project-item">
+                        <a class="mxd-project-item__media anim-uni-in-up" href="http://salesflowapp.com.br/" target="_blank" rel="noopener">
+                          <div class="mxd-project-item__preview preview-image-sales parallax-img-small"></div>
+                          <div class="mxd-project-item__tags">
+                            <span class="tag tag-default tag-permanent">React</span>
+                            <span class="tag tag-default tag-permanent">WhatsApp</span>
+                            <span class="tag tag-default tag-permanent">n8n</span>
+                          </div>
+                        </a>
+                        <div class="mxd-project-item__promo">
+                          <div class="mxd-project-item__name">
+                            <a class="anim-uni-in-up" href="http://salesflowapp.com.br/" target="_blank" rel="noopener"><span>Sales Flow</span> <span data-i18n="p2name">plataforma de vendas conversacionais</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mxd-project-item">
+                        <a class="mxd-project-item__media anim-uni-in-up" href="https://salonbook.com.br/" target="_blank" rel="noopener">
+                          <div class="mxd-project-item__preview preview-image-salon parallax-img-small"></div>
+                          <div class="mxd-project-item__tags">
+                            <span class="tag tag-default tag-permanent">React</span>
+                            <span class="tag tag-default tag-permanent">WhatsApp</span>
+                            <span class="tag tag-default tag-permanent">PWA</span>
+                          </div>
+                        </a>
+                        <div class="mxd-project-item__promo">
+                          <div class="mxd-project-item__name">
+                            <a class="anim-uni-in-up" href="https://salonbook.com.br/" target="_blank" rel="noopener"><span>Salon Book</span> <span data-i18n="p3name">gestão para salões e barbearias</span></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mxd-section padding-mtext-pre-stack">
+        <div class="mxd-container fullwidth-container">
+          <div class="mxd-block">
+            <div class="marquee marquee-right--gsap muted-extra">
+              <div class="marquee__toright">
+                <div class="marquee__item one-line item-regular text">
+                  <p class="marquee__text" data-i18n="marquee">Do conceito à operação</p>
+                  <div class="marquee__image">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="currentColor"><path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4z"/></svg>
+                  </div>
+                </div>
+                <div class="marquee__item one-line item-regular text">
+                  <p class="marquee__text">Apps · Sistemas · SaaS</p>
+                  <div class="marquee__image">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="currentColor"><path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4z"/></svg>
+                  </div>
+                </div>
+                <div class="marquee__item one-line item-regular text">
+                  <p class="marquee__text" data-i18n="marquee">Do conceito à operação</p>
+                  <div class="marquee__image">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="currentColor"><path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4z"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="solucao" class="mxd-section padding-stacked-section">
+        <div class="mxd-container grid-container">
+          <div class="mxd-block mxd-grid-item no-margin">
+            <div class="content__block">
+              <div class="stack-wrapper">
+                <div class="stack-offset"></div>
+                <div class="services-stack">
+                  <div class="stack-item">
+                    <div class="mxd-services-stack__inner justify-between bg-base-opp">
+                      <div class="mxd-services-stack__controls">
+                        <a class="btn btn-round btn-round-large btn-additional slide-right-up anim-no-delay" href="#contato" data-i18n-wa aria-label="WhatsApp">
+                          <i class="ph ph-arrow-up-right"></i>
+                        </a>
+                      </div>
+                      <div class="mxd-services-stack__title width-60">
+                        <h3 class="opposite" data-i18n="s1title">Produto de ponta a ponta</h3>
+                      </div>
+                      <div class="mxd-services-stack__info width-60">
+                        <div class="mxd-services-cards__tags">
+                          <span class="tag tag-default tag-outline-opposite">Discovery</span>
+                          <span class="tag tag-default tag-outline-opposite">UX</span>
+                          <span class="tag tag-default tag-outline-opposite">Backend</span>
+                          <span class="tag tag-default tag-outline-opposite">Deploy</span>
+                        </div>
+                        <p class="t-opposite" data-i18n="s1text">Discovery, wireframes, design system, backend, frontend, deploy e monitoramento — tudo no mesmo time.</p>
+                      </div>
+                      <div class="services-stack__image">
+                        <img class="service-img service-img-s" src="/imagens/portfolio/sales-flow.png" alt="Sales Flow">
+                        <img class="service-img service-img-m" src="/imagens/portfolio/sales-flow.png" alt="Sales Flow">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="stack-item">
+                    <div class="mxd-services-stack__inner justify-between bg-accent">
+                      <div class="mxd-services-stack__controls">
+                        <a class="btn btn-round btn-round-large btn-base slide-right-up anim-no-delay" href="#contato" data-i18n-wa aria-label="WhatsApp">
+                          <i class="ph ph-arrow-up-right"></i>
+                        </a>
+                      </div>
+                      <div class="mxd-services-stack__title width-60">
+                        <h3 class="opposite" data-i18n="s2title">Stack moderna e escalável</h3>
+                      </div>
+                      <div class="mxd-services-stack__info width-60">
+                        <div class="mxd-services-cards__tags">
+                          <span class="tag tag-default tag-outline-opposite">Next.js</span>
+                          <span class="tag tag-default tag-outline-opposite">Supabase</span>
+                          <span class="tag tag-default tag-outline-opposite">Stripe</span>
+                        </div>
+                        <p class="t-opposite" data-i18n="s2text">Next.js, React, Node, PostgreSQL, Supabase, Stripe — tecnologias que investidores e usuários confiam.</p>
+                      </div>
+                      <div class="services-stack__image">
+                        <img class="service-img service-img-s" src="/imagens/portfolio/voice-img.png" alt="Voice Report">
+                        <img class="service-img service-img-m" src="/imagens/portfolio/voice-img.png" alt="Voice Report">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="stack-item">
+                    <div class="mxd-services-stack__inner radius-dark justify-between bg-base-tint">
+                      <div class="mxd-services-stack__controls">
+                        <a class="btn btn-round btn-round-large btn-opposite slide-right-up anim-no-delay" href="#contato" data-i18n-wa aria-label="WhatsApp">
+                          <i class="ph ph-arrow-up-right"></i>
+                        </a>
+                      </div>
+                      <div class="mxd-services-stack__title width-60">
+                        <h3 data-i18n="s3title">Foco em receita desde o dia 1</h3>
+                      </div>
+                      <div class="mxd-services-stack__info width-60">
+                        <div class="mxd-services-cards__tags">
+                          <span class="tag tag-default tag-outline">Stripe</span>
+                          <span class="tag tag-default tag-outline">Onboarding</span>
+                          <span class="tag tag-default tag-outline">Métricas</span>
+                        </div>
+                        <p data-i18n="s3text">Integração de pagamentos, onboarding otimizado e métricas de conversão embutidas no produto.</p>
+                      </div>
+                      <div class="services-stack__image">
+                        <img class="service-img service-img-s" src="/imagens/portfolio/salon-book-dashboard.png" alt="Salon Book">
+                        <img class="service-img service-img-m" src="/imagens/portfolio/salon-book-dashboard.png" alt="Salon Book">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mxd-section padding-default">
+        <div class="mxd-container grid-container">
+          <div class="mxd-block">
+            <div class="container-fluid px-0">
+              <div class="row gx-0">
+                <div class="col-12 mxd-grid-item no-margin">
+                  <p class="mxd-point-subtitle anim-uni-in-up" data-i18n="problemEyebrow">O desafio</p>
+                  <h2 class="h2-large reveal-type anim-uni-in-up" data-i18n="problemTitle">Você tem a ideia. Falta quem execute com excelência.</h2>
+                </div>
+              </div>
+              <div class="row gx-0">
+                <div class="col-12 col-xl-4 mxd-grid-item animate-card-3">
+                  <article class="lws-problem__item">
+                    <p class="lws-problem__num">01</p>
+                    <h3 data-i18n="pr1t">Freelancers que somem no meio do projeto</h3>
+                    <p data-i18n="pr1d">Você investiu meses e o produto ficou incompleto — sem documentação, sem testes, sem visão de produto.</p>
+                  </article>
+                </div>
+                <div class="col-12 col-xl-4 mxd-grid-item animate-card-3">
+                  <article class="lws-problem__item">
+                    <p class="lws-problem__num">02</p>
+                    <h3 data-i18n="pr2t">Agências genéricas que entregam template</h3>
+                    <p data-i18n="pr2d">Recebeu um site bonito, mas sem arquitetura escalável, sem integrações e sem estratégia de monetização.</p>
+                  </article>
+                </div>
+                <div class="col-12 col-xl-4 mxd-grid-item animate-card-3">
+                  <article class="lws-problem__item">
+                    <p class="lws-problem__num">03</p>
+                    <h3 data-i18n="pr3t">Equipe interna cara e lenta</h3>
+                    <p data-i18n="pr3d">Contratar devs sênior, designers e PMs custa R$ 80k+/mês — e ainda leva 6 meses para o primeiro release.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mxd-block">
+            <div class="container-fluid px-0">
+              <div class="row gx-0 d-xl-flex justify-content-xl-center">
+                <div class="col-12 col-xl-8 mxd-grid-item no-margin">
+                  <div class="mxd-block__content">
+                    <div class="mxd-block__manifest centered anim-uni-in-up">
+                      <p class="mxd-manifest mxd-manifest-l reveal-type" data-i18n="manifest">Na Lopes Web Studio, cada app e sistema nasce com arquitetura sólida, UX que converte e stack moderna — incluindo SaaS prontos para escalar.</p>
+                      <div class="mxd-manifest__controls anim-uni-in-up">
+                        <div class="mxd-btngroup centered">
+                          <a class="btn btn-anim btn-default btn-accent slide-right-up" href="#portfolio">
+                            <span class="btn-caption" data-i18n="myWorks">Ver projetos</span>
+                            <i class="ph-bold ph-arrow-up-right"></i>
+                          </a>
+                          <a class="btn btn-anim btn-default btn-outline slide-right-up" href="https://wa.me/5511973701295?text=Ol%C3%A1!%20Vi%20o%20portf%C3%B3lio%20da%20Lopes%20Web%20Studio%20e%20gostaria%20de%20agendar%20uma%20conversa." data-i18n-wa target="_blank" rel="noopener">
+                            <span class="btn-caption" data-i18n="startProject">Iniciar meu projeto</span>
+                            <i class="ph-bold ph-arrow-up-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mxd-section padding-pre-title">
+        <div class="mxd-container">
+          <div class="mxd-container__circle">
+            <a class="btn-rotating btn-rotating-blur-outline ver-02" href="#contato" data-i18n-wa>
+              <svg version="1.1" id="scrollDown" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160 160" xml:space="preserve" class="btn-rotating__text animate-rotation" data-value="360">
+                <defs>
+                  <path id="textPath" d="M149.7,80c0,38.5-31.2,69.7-69.7,69.7S10.3,118.5,10.3,80S41.5,10.3,80,10.3S149.7,41.5,149.7,80z"/>
+                </defs>
+                <g>
+                  <use xlink:href="#textPath" fill="none"></use>
+                  <text>
+                    <textPath xlink:href="#textPath" data-i18n="rotating">Vamos começar um projeto * Vamos começar um projeto * </textPath>
+                  </text>
+                </g>
+              </svg>
+              <img class="btn-rotating__image" src="/imagens/nova-foto.png" alt="Daniel Lopes">
+            </a>
+          </div>
+          <div class="mxd-divider">
+            <div class="mxd-divider__image divider-image-lopes parallax-img"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="processo" class="mxd-section padding-blog">
+        <div class="mxd-container grid-container">
+          <div class="mxd-block">
+            <div class="mxd-section-title pre-grid">
+              <div class="container-fluid p-0">
+                <div class="row g-0">
+                  <div class="col-12 col-xl-5 mxd-grid-item no-margin">
+                    <div class="mxd-section-title__hrtitle">
+                      <p class="mxd-point-subtitle anim-uni-in-up" data-i18n="processEyebrow">Como funciona</p>
+                      <h2 class="reveal-type anim-uni-in-up" data-i18n="processTitle">Do briefing ao lançamento em 3 passos</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mxd-block">
+            <div class="container-fluid p-0">
+              <div class="row g-0">
+                <div class="col-12 col-xl-4 mxd-grid-item animate-card-3">
+                  <article class="lws-problem__item">
+                    <p class="lws-problem__num">01</p>
+                    <h3 data-i18n="st1t">Discovery & Estratégia</h3>
+                    <p data-i18n="st1d">Mapeamos seu mercado, definimos MVP, personas e modelo de receita. Você sai com roadmap claro.</p>
+                  </article>
+                </div>
+                <div class="col-12 col-xl-4 mxd-grid-item animate-card-3">
+                  <article class="lws-problem__item">
+                    <p class="lws-problem__num">02</p>
+                    <h3 data-i18n="st2t">Design & Desenvolvimento</h3>
+                    <p data-i18n="st2d">Sprints quinzenais com demos ao vivo. Design system, código limpo e testes automatizados.</p>
+                  </article>
+                </div>
+                <div class="col-12 col-xl-4 mxd-grid-item animate-card-3">
+                  <article class="lws-problem__item">
+                    <p class="lws-problem__num">03</p>
+                    <h3 data-i18n="st3t">Launch & Escala</h3>
+                    <p data-i18n="st3d">Deploy em produção, monitoramento, onboarding de usuários e suporte pós-lançamento por 30 dias.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="depoimentos" class="mxd-section padding-blog">
+        <div class="mxd-container grid-container">
+          <div class="mxd-block">
+            <div class="mxd-section-title pre-grid">
+              <div class="container-fluid p-0">
+                <div class="row g-0">
+                  <div class="col-12 col-xl-5 mxd-grid-item no-margin">
+                    <div class="mxd-section-title__hrtitle">
+                      <h2 class="reveal-type anim-uni-in-up" data-i18n="testimonialsTitle">Quem construiu conosco</h2>
+                    </div>
+                  </div>
+                  <div class="col-12 col-xl-7 mxd-grid-item no-margin">
+                    <div class="mxd-section-title__hrdescr">
+                      <p class="anim-uni-in-up" data-i18n="testimonialsDesc">Clientes que confiaram no estúdio para tirar o produto do papel e colocar no ar.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mxd-block">
+            <div class="mxd-blog-preview">
+              <div class="container-fluid p-0">
+                <div class="row g-0">
+                  <div class="col-12 col-md-6 col-xl-3 mxd-blog-preview__item mxd-grid-item animate-card-3">
+                    <div class="mxd-blog-preview__media">
+                      <div class="mxd-blog-preview__image testimonial-image-1 parallax-img-small"></div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-xl-3 mxd-blog-preview__item mxd-grid-item animate-card-3">
+                    <div class="mxd-blog-preview__media">
+                      <div class="mxd-blog-preview__image testimonial-image-2 parallax-img-small"></div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-xl-3 mxd-blog-preview__item mxd-grid-item animate-card-3">
+                    <div class="mxd-blog-preview__media">
+                      <div class="mxd-blog-preview__image testimonial-image-3 parallax-img-small"></div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-xl-3 mxd-blog-preview__item mxd-grid-item animate-card-3">
+                    <div class="mxd-blog-preview__media">
+                      <div class="mxd-blog-preview__image testimonial-image-4 parallax-img-small"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="faq" class="mxd-section padding-default">
+        <div class="mxd-container grid-container">
+          <div class="mxd-block">
+            <div class="mxd-section-title pre-grid">
+              <div class="container-fluid p-0">
+                <div class="row g-0">
+                  <div class="col-12 col-xl-5 mxd-grid-item no-margin">
+                    <div class="mxd-section-title__hrtitle">
+                      <p class="mxd-point-subtitle anim-uni-in-up" data-i18n="faq">FAQ</p>
+                      <h2 class="reveal-type anim-uni-in-up" data-i18n="faqTitle">Perguntas frequentes</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mxd-block">
+            <div class="lws-faq mxd-accordion loading__fade">
+              <div class="mxd-accordion__item">
+                <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                <div class="mxd-accordion__title anim-uni-in-up">
+                  <p data-i18n="q1">Quanto tempo leva para lançar um MVP?</p>
+                  <div class="mxd-accordion__arrow"><i class="ph ph-plus"></i></div>
+                </div>
+                <div class="mxd-accordion__content">
+                  <p class="mxd-accordion__text" data-i18n="a1">Nosso prazo médio é de 60 a 90 dias para um MVP completo com autenticação, pagamentos e dashboard. Projetos mais complexos são estimados no discovery.</p>
+                </div>
+                <div class="mxd-accordion__divider anim-uni-in-up"></div>
+              </div>
+              <div class="mxd-accordion__item">
+                <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                <div class="mxd-accordion__title anim-uni-in-up">
+                  <p data-i18n="q2">Vocês ficam com equity do produto?</p>
+                  <div class="mxd-accordion__arrow"><i class="ph ph-plus"></i></div>
+                </div>
+                <div class="mxd-accordion__content">
+                  <p class="mxd-accordion__text" data-i18n="a2">Não. O código, design e propriedade intelectual são 100% seus. Trabalhamos por projeto ou retainer mensal — sem equity.</p>
+                </div>
+                <div class="mxd-accordion__divider anim-uni-in-up"></div>
+              </div>
+              <div class="mxd-accordion__item">
+                <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                <div class="mxd-accordion__title anim-uni-in-up">
+                  <p data-i18n="q3">Qual stack vocês utilizam?</p>
+                  <div class="mxd-accordion__arrow"><i class="ph ph-plus"></i></div>
+                </div>
+                <div class="mxd-accordion__content">
+                  <p class="mxd-accordion__text" data-i18n="a3">Next.js, React, TypeScript, Node.js, PostgreSQL (Supabase), Stripe, Vercel e AWS. Escolhemos a stack ideal para cada produto.</p>
+                </div>
+                <div class="mxd-accordion__divider anim-uni-in-up"></div>
+              </div>
+              <div class="mxd-accordion__item">
+                <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                <div class="mxd-accordion__title anim-uni-in-up">
+                  <p data-i18n="q4">E depois do lançamento?</p>
+                  <div class="mxd-accordion__arrow"><i class="ph ph-plus"></i></div>
+                </div>
+                <div class="mxd-accordion__content">
+                  <p class="mxd-accordion__text" data-i18n="a4">Incluímos 30 dias de suporte pós-lançamento. Depois, oferecemos planos de manutenção e evolução contínua do produto.</p>
+                </div>
+                <div class="mxd-accordion__divider anim-uni-in-up"></div>
+              </div>
+              <div class="mxd-accordion__item">
+                <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                <div class="mxd-accordion__title anim-uni-in-up">
+                  <p data-i18n="q5">Atendem fora do Brasil?</p>
+                  <div class="mxd-accordion__arrow"><i class="ph ph-plus"></i></div>
+                </div>
+                <div class="mxd-accordion__content">
+                  <p class="mxd-accordion__text" data-i18n="a5">Sim. Trabalhamos com clientes em Portugal, EUA e LATAM. Comunicação em português, inglês ou espanhol.</p>
+                </div>
+                <div class="mxd-accordion__divider anim-uni-in-up"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contato" class="mxd-section overflow-hidden">
+        <div class="mxd-container">
+          <div class="mxd-block">
+            <div class="mxd-promo">
+              <div class="mxd-promo__inner anim-zoom-out-container">
+                <div class="mxd-promo__bg lws-promo-bg"></div>
+                <div class="mxd-promo__content">
+                  <p class="mxd-promo__title anim-uni-in-up">
+                    <span class="mxd-promo__icon">
+                      <img src="/imagens/logo-menu.webp" alt="Lopes Web Studio">
+                    </span>
+                    <span class="mxd-promo__caption reveal-type" data-i18n="ctaTitle">Pronto para construir seu app ou sistema?</span>
+                  </p>
+                  <div class="mxd-promo__controls anim-uni-in-up">
+                    <a class="btn btn-anim btn-default btn-large btn-additional slide-right-up" href="https://wa.me/5511973701295?text=Ol%C3%A1!%20Vi%20o%20portf%C3%B3lio%20da%20Lopes%20Web%20Studio%20e%20gostaria%20de%20agendar%20uma%20conversa." data-i18n-wa target="_blank" rel="noopener">
+                      <span class="btn-caption" data-i18n="ctaBtn">Agendar minha conversa gratuita</span>
+                      <i class="ph-bold ph-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mxd-promo__images">
+                  <img class="promo-image promo-image-1" src="/imagens/portfolio/sales-flow.png" alt="Sales Flow">
+                  <img class="promo-image promo-image-2" src="/imagens/portfolio/voice-img.png" alt="Voice Report">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer id="mxd-footer" class="mxd-footer">
+      <div class="mxd-footer__text-wrap">
+        <div class="fullwidth-text__tl-trigger"></div>
+        <div class="mxd-footer__fullwidth-text personal anim-top-to-bottom">
+          <span class="footer-wordmark">LOPES WEB</span>
+        </div>
+      </div>
+      <div class="mxd-footer__footer-blocks">
+        <div class="footer-blocks__column animate-card-3">
+          <div class="footer-blocks__card fullheight-card">
+            <div class="footer-blocks__nav">
+              <ul class="footer-nav">
+                <li class="footer-nav__item anim-uni-in-up">
+                  <a href="#header" class="footer-nav__link btn-anim"><span class="btn-caption" data-i18n="footerHome">Início</span></a>
+                </li>
+                <li class="footer-nav__item anim-uni-in-up">
+                  <a href="#processo" class="footer-nav__link btn-anim"><span class="btn-caption" data-i18n="footerAbout">Processo</span></a>
+                </li>
+                <li class="footer-nav__item anim-uni-in-up">
+                  <a href="#portfolio" class="footer-nav__link btn-anim"><span class="btn-caption" data-i18n="footerWorks">Portfólio</span></a>
+                  <p class="footer-nav__counter">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" fill="currentColor"><path fill="currentColor" d="M19.6,9.6c0,0-3,0-4,0c-0.4,0-1.8-0.2-1.8-0.2c-0.6-0.1-1.1-0.2-1.6-0.6c-0.5-0.3-0.9-0.8-1.2-1.2c-0.3-0.4-0.4-0.9-0.5-1.4c0,0-0.1-1.1-0.2-1.5c-0.1-1.1,0-4.4,0-4.4C10.4,0.2,10.2,0,10,0S9.6,0.2,9.6,0.4c0,0,0.1,3.3,0,4.4c0,0.4-0.2,1.5-0.2,1.5C9.4,6.7,9.2,7.2,9,7.6C8.7,8.1,8.2,8.5,7.8,8.9c-0.5,0.3-1,0.5-1.6,0.6c0,0-1.2,0.1-1.7,0.2c-1,0.1-4.2,0-4.2,0C0.2,9.6,0,9.8,0,10c0,0.2,0.2,0.4,0.4,0.4c0,0,3.1-0.1,4.2,0c0.4,0,1.7,0.2,1.7,0.2c0.6,0.1,1.1,0.2,1.6,0.6c0.4,0.3,0.8,0.7,1.1,1.1c0.3,0.5,0.5,1,0.6,1.6c0,0,0.1,1.3,0.2,1.7c0,1,0,4.1,0,4.1c0,0.2,0.2,0.4,0.4,0.4s0.4-0.2,0.4-0.4c0,0,0-3.1,0-4.1c0-0.4,0.2-1.7,0.2-1.7c0.1-0.6,0.2-1.1,0.6-1.6c0.3-0.4,0.7-0.8,1.1-1.1c0.5-0.3,1-0.5,1.6-0.6c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6z"></path></svg>
+                    <span>3</span>
+                  </p>
+                </li>
+                <li class="footer-nav__item anim-uni-in-up">
+                  <a href="#solucao" class="footer-nav__link btn-anim"><span class="btn-caption" data-i18n="footerServices">Solução</span></a>
+                </li>
+                <li class="footer-nav__item anim-uni-in-up">
+                  <a href="#depoimentos" class="footer-nav__link btn-anim"><span class="btn-caption" data-i18n="footerInsights">Depoimentos</span></a>
+                </li>
+                <li class="footer-nav__item anim-uni-in-up">
+                  <a href="#contato" class="footer-nav__link btn-anim" data-i18n-wa><span class="btn-caption" data-i18n="footerContact">Contato</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-blocks__column animate-card-3">
+          <div class="footer-blocks__card">
+            <p class="mxd-point-subtitle anim-uni-in-up">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" fill="currentColor"><path fill="currentColor" d="M19.6,9.6c0,0-3,0-4,0c-0.4,0-1.8-0.2-1.8-0.2c-0.6-0.1-1.1-0.2-1.6-0.6c-0.5-0.3-0.9-0.8-1.2-1.2c-0.3-0.4-0.4-0.9-0.5-1.4c0,0-0.1-1.1-0.2-1.5c-0.1-1.1,0-4.4,0-4.4C10.4,0.2,10.2,0,10,0S9.6,0.2,9.6,0.4c0,0,0.1,3.3,0,4.4c0,0.4-0.2,1.5-0.2,1.5C9.4,6.7,9.2,7.2,9,7.6C8.7,8.1,8.2,8.5,7.8,8.9c-0.5,0.3-1,0.5-1.6,0.6c0,0-1.2,0.1-1.7,0.2c-1,0.1-4.2,0-4.2,0C0.2,9.6,0,9.8,0,10c0,0.2,0.2,0.4,0.4,0.4c0,0,3.1-0.1,4.2,0c0.4,0,1.7,0.2,1.7,0.2c0.6,0.1,1.1,0.2,1.6,0.6c0.4,0.3,0.8,0.7,1.1,1.1c0.3,0.5,0.5,1,0.6,1.6c0,0,0.1,1.3,0.2,1.7c0,1,0,4.1,0,4.1c0,0.2,0.2,0.4,0.4,0.4s0.4-0.2,0.4-0.4c0,0,0-3.1,0-4.1c0-0.4,0.2-1.7,0.2-1.7c0.1-0.6,0.2-1.1,0.6-1.6c0.3-0.4,0.7-0.8,1.1-1.1c0.5-0.3,1-0.5,1.6-0.6c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6z"></path></svg>
+              <a href="mailto:contato@lopeswebstudio.com.br">contato@lopeswebstudio.com.br</a>
+            </p>
+          </div>
+          <div class="footer-blocks__card">
+            <p class="mxd-point-subtitle anim-uni-in-up">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" fill="currentColor"><path fill="currentColor" d="M19.6,9.6c0,0-3,0-4,0c-0.4,0-1.8-0.2-1.8-0.2c-0.6-0.1-1.1-0.2-1.6-0.6c-0.5-0.3-0.9-0.8-1.2-1.2c-0.3-0.4-0.4-0.9-0.5-1.4c0,0-0.1-1.1-0.2-1.5c-0.1-1.1,0-4.4,0-4.4C10.4,0.2,10.2,0,10,0S9.6,0.2,9.6,0.4c0,0,0.1,3.3,0,4.4c0,0.4-0.2,1.5-0.2,1.5C9.4,6.7,9.2,7.2,9,7.6C8.7,8.1,8.2,8.5,7.8,8.9c-0.5,0.3-1,0.5-1.6,0.6c0,0-1.2,0.1-1.7,0.2c-1,0.1-4.2,0-4.2,0C0.2,9.6,0,9.8,0,10c0,0.2,0.2,0.4,0.4,0.4c0,0,3.1-0.1,4.2,0c0.4,0,1.7,0.2,1.7,0.2c0.6,0.1,1.1,0.2,1.6,0.6c0.4,0.3,0.8,0.7,1.1,1.1c0.3,0.5,0.5,1,0.6,1.6c0,0,0.1,1.3,0.2,1.7c0,1,0,4.1,0,4.1c0,0.2,0.2,0.4,0.4,0.4s0.4-0.2,0.4-0.4c0,0,0-3.1,0-4.1c0-0.4,0.2-1.7,0.2-1.7c0.1-0.6,0.2-1.1,0.6-1.6c0.3-0.4,0.7-0.8,1.1-1.1c0.5-0.3,1-0.5,1.6-0.6c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6z"></path></svg>
+              <a href="https://wa.me/5511973701295" data-i18n-wa target="_blank" rel="noopener">+55 11 97370-1295</a>
+            </p>
+          </div>
+          <div class="footer-blocks__card fill-card notify">
+            <div class="footer-blocks__title anim-uni-in-up">
+              <p class="footer-blocks__title-m" data-i18n="subscribe">Fale com a gente:</p>
+            </div>
+            <div class="anim-uni-in-up">
+              <a class="btn btn-anim btn-default btn-outline slide-right-up" href="https://wa.me/5511973701295?text=Ol%C3%A1!%20Vi%20o%20portf%C3%B3lio%20da%20Lopes%20Web%20Studio%20e%20gostaria%20de%20agendar%20uma%20conversa." data-i18n-wa target="_blank" rel="noopener">
+                <span class="btn-caption" data-i18n="subscribeCta">WhatsApp</span>
+                <i class="ph-bold ph-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-blocks__column animate-card-3">
+          <div class="footer-blocks__card fullheight-card">
+            <div class="footer-blocks__block">
+              <div class="footer-blocks__title anim-uni-in-up">
+                <p class="footer-blocks__title-l" data-i18n="ecosystem">Ecosistema</p>
+              </div>
+              <div class="footer-blocks__socials">
+                <ul class="footer-socials">
+                  <li class="footer-socials__item anim-uni-in-up"><a href="https://voicereportapp.com/" class="footer-socials__link" target="_blank" rel="noopener">Voice Report</a></li>
+                  <li class="footer-socials__item anim-uni-in-up"><a href="http://salesflowapp.com.br/" class="footer-socials__link" target="_blank" rel="noopener">Sales Flow</a></li>
+                  <li class="footer-socials__item anim-uni-in-up"><a href="https://salonbook.com.br/" class="footer-socials__link" target="_blank" rel="noopener">Salon Book</a></li>
+                  <li class="footer-socials__item anim-uni-in-up"><a href="https://www.zaask.pt/user/daniellpsadm" class="footer-socials__link" target="_blank" rel="noopener">Zaask</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-blocks__links anim-uni-in-up">
+              <p class="t-xsmall t-muted">
+                Lopes Web Studio
+                <i class="ph-bold ph-copyright"></i>
+                2026
+                ·
+                <span data-i18n="rights">Todos os direitos reservados.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#0" id="to-top" class="btn btn-to-top slide-up anim-no-delay">
+      <i class="ph ph-arrow-up"></i>
+    </a>
+
+    <script src="/js/i18n.js"></script>
+    <script src="/js/libs.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/custom.js"></script>
+    <script>
+      const statsCounter1 = new countUp.CountUp("stats-counter-1", 12, optionsPlus);
+      const statsCounter2 = new countUp.CountUp("stats-counter-2", 90, optionsPlus);
+      statsCounter1.start();
+      statsCounter2.start();
+    </script>
+
+  </body>
+</html>
