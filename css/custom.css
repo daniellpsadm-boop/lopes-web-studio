@@ -1,5 +1,29 @@
 /* Lopes Web Studio — overrides on Rayo personal portfolio */
 
+:root {
+  --lws-orange: #F07028;
+  --lws-orange-rgb: 240, 112, 40;
+  --lws-ink: #161616;
+  --accent--light: var(--lws-orange);
+  --accent-rgb--light: var(--lws-orange-rgb);
+  --additional--light: var(--lws-orange);
+  --additional-rgb--light: var(--lws-orange-rgb);
+  --accent--dark: var(--lws-orange);
+  --accent-rgb--dark: var(--lws-orange-rgb);
+  --additional--dark: var(--lws-orange);
+  --additional-rgb--dark: var(--lws-orange-rgb);
+  --pt-purple-rgb: var(--lws-orange-rgb);
+}
+
+:root,
+[color-scheme="light"],
+[color-scheme="dark"] {
+  --accent: var(--lws-orange);
+  --accent-rgb: var(--lws-orange-rgb);
+  --additional: var(--lws-orange);
+  --additional-rgb: var(--lws-orange-rgb);
+}
+
 html.i18n-pending body {
   visibility: hidden;
 }
@@ -36,7 +60,52 @@ html.i18n-pending body {
 
 .lws-langs a.is-active,
 .lws-langs a:hover {
-  color: var(--t-bright);
+  color: var(--accent);
+}
+
+.mxd-hero__mark .mark-icon {
+  background-color: var(--accent);
+}
+
+.mxd-point-subtitle svg {
+  fill: var(--accent);
+  color: var(--accent);
+}
+
+.mxd-point-subtitle:not(:has(svg))::before {
+  content: "";
+  width: 0.85rem;
+  height: 0.85rem;
+  background: var(--accent);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+.btn-accent,
+.btn-additional,
+.tag-accent,
+.footer-nav__counter,
+.footer-nav__counter span {
+  color: var(--lws-ink);
+}
+
+.bg-accent,
+.bg-accent .opposite,
+.bg-accent .t-opposite,
+.bg-accent h3,
+.bg-accent p {
+  color: var(--lws-ink);
+}
+
+.bg-accent .tag-outline-opposite {
+  color: var(--lws-ink);
+  border-color: var(--lws-ink);
+}
+
+::selection,
+::-moz-selection {
+  background-color: var(--accent);
+  color: var(--lws-ink);
 }
 
 .hero-09-wordmark {
