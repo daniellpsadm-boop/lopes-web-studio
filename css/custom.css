@@ -63,22 +63,57 @@ html.i18n-pending body {
   object-position: center top;
 }
 
-.preview-image-voice {
-  background-image: url("../imagens/portfolio/voice-img.png");
-  background-size: cover;
+.mxd-project-item__media {
+  height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .mxd-project-item__media,
+  .mxd-project-item__preview {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .mxd-project-item__media,
+  .mxd-project-item__preview {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .mxd-project-item__media,
+  .mxd-project-item__preview {
+    height: auto;
+  }
+}
+
+.mxd-project-item__preview {
+  height: auto;
+  background-color: var(--base-opp-tint);
+  background-size: contain;
   background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.mxd-project-item__preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center top;
+}
+
+.preview-image-voice {
+  background-image: none;
 }
 
 .preview-image-sales {
-  background-image: url("../imagens/portfolio/sales-flow.png");
-  background-size: cover;
-  background-position: center top;
+  background-image: none;
 }
 
 .preview-image-salon {
-  background-image: url("../imagens/portfolio/salon-book-dashboard.png");
-  background-size: cover;
-  background-position: center top;
+  background-image: none;
 }
 
 .divider-image-lopes {
