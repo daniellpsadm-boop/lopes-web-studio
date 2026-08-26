@@ -132,7 +132,9 @@ html.i18n-pending body {
   object-position: center top;
 }
 
-.mxd-project-item__media {
+/* Portfolio: mostra o screenshot inteiro, em escala natural (sem zoom, sem corte) */
+.mxd-project-item__media,
+.mxd-project-item__preview {
   height: auto;
 }
 
@@ -158,29 +160,43 @@ html.i18n-pending body {
 }
 
 .mxd-project-item__preview {
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 2rem 8.5rem;
   background-color: var(--base-opp-tint);
-  background-size: contain;
-  background-position: center top;
-  background-repeat: no-repeat;
+  background-image: none;
+  overflow: hidden;
 }
 
 .mxd-project-item__preview img {
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;
+  max-width: 100%;
+  max-height: 58vh;
   object-fit: contain;
-  object-position: center top;
+  object-position: center;
 }
 
-.preview-image-voice {
-  background-image: none;
+@media only screen and (min-width: 768px) {
+  .mxd-project-item__preview {
+    padding: 2.8rem 2.8rem 11rem;
+  }
+  .mxd-project-item__preview img {
+    max-height: 64vh;
+  }
 }
 
-.preview-image-sales {
-  background-image: none;
+@media only screen and (min-width: 1200px) {
+  .mxd-project-item__preview img {
+    max-height: 68vh;
+  }
 }
 
+.preview-image-voice,
+.preview-image-sales,
 .preview-image-salon {
   background-image: none;
 }
