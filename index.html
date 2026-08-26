@@ -8,16 +8,23 @@
     <meta name="author" content="Lopes Web Studio">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="icon" href="/imagens/logo-menu.webp" type="image/webp">
-    <link rel="apple-touch-icon" href="/imagens/logo-menu.webp">
+    <script>
+      (function () {
+        var p = location.pathname;
+        var base = p.indexOf("/lopes-web-studio-rayo") === 0 ? "/lopes-web-studio-rayo/" : "/";
+        document.write('<base href="' + base + '">');
+      })();
+    </script>
+    <link rel="icon" href="imagens/logo-menu.webp" type="image/webp">
+    <link rel="apple-touch-icon" href="imagens/logo-menu.webp">
     <meta property="og:title" content="Lopes Web Studio — Apps, Sistemas e SaaS">
     <meta property="og:description" content="Construímos apps, sistemas e SaaS sob medida. Portfólio de 12+ projetos lançados.">
     <meta property="og:url" content="https://dev.lopeswebstudio.com.br">
-    <meta property="og:image" content="/imagens/nova-foto.png">
-    <link rel="stylesheet" type="text/css" href="/css/loaders/loader.css">
-    <link rel="stylesheet" type="text/css" href="/css/plugins.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <meta property="og:image" content="imagens/nova-foto.png">
+    <link rel="stylesheet" type="text/css" href="css/loaders/loader.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FAF7F6">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#161616">
     <meta name="msapplication-navbutton-color" content="#161616">
@@ -101,7 +108,7 @@
                 <div class="menu-promo__content">
                   <p class="menu-promo__caption menu-fade-in" data-i18n="menuPromo">Olá! Sou Daniel Lopes. Construímos produtos digitais completos, com arquitetura sólida e foco em receita.</p>
                   <div class="menu-promo__video">
-                    <img class="menu-promo__photo" src="/imagens/nova-foto.png" alt="Daniel — fundador da Lopes Web Studio">
+                    <img class="menu-promo__photo" src="imagens/"nova-foto.png" alt="Daniel — fundador da Lopes Web Studio">
                   </div>
                 </div>
               </div>
@@ -118,14 +125,14 @@
     <header id="header" class="mxd-header">
       <div class="mxd-header__logo loading__fade">
         <a href="/" class="mxd-logo" aria-label="Lopes Web Studio">
-          <img class="mxd-logo__brand" src="/imagens/logo-menu.webp" alt="Lopes Web Studio">
+          <img class="mxd-logo__brand" src="imagens/"logo-menu.webp" alt="Lopes Web Studio">
         </a>
       </div>
       <div class="mxd-header__controls loading__fade">
         <nav class="lws-langs" aria-label="Language">
-          <a href="/" data-lang="pt">PT</a>
-          <a href="/en" data-lang="en">EN</a>
-          <a href="/es" data-lang="es">ES</a>
+          <a href="?lang=pt" data-lang="pt">PT</a>
+          <a href="?lang=en" data-lang="en">EN</a>
+          <a href="?lang=es" data-lang="es">ES</a>
         </nav>
         <button id="color-switcher" class="mxd-color-switcher" type="button" role="switch" aria-label="light/dark mode" aria-checked="true"></button>
         <a class="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right-up" href="https://wa.me/5511973701295?text=Ol%C3%A1!%20Vi%20o%20portf%C3%B3lio%20da%20Lopes%20Web%20Studio%20e%20gostaria%20de%20agendar%20uma%20conversa." data-i18n-wa target="_blank" rel="noopener" aria-label="WhatsApp">
@@ -166,7 +173,7 @@
             </div>
             <div class="mxd-hero-09__objects">
               <div class="hero-09-objects__image loading__item">
-                <img class="mxd-move" src="/imagens/nova-foto.png" alt="Daniel — fundador da Lopes Web Studio">
+                <img class="mxd-move" src="imagens/"nova-foto.png" alt="Daniel — fundador da Lopes Web Studio">
               </div>
               <div class="hero-09-objects__item item-01 loading__item">
                 <div class="mxd-counter horizontal">
@@ -338,8 +345,8 @@
                         <p class="t-opposite" data-i18n="s1text">Discovery, wireframes, design system, backend, frontend, deploy e monitoramento — tudo no mesmo time.</p>
                       </div>
                       <div class="services-stack__image">
-                        <img class="service-img service-img-s" src="/imagens/portfolio/sales-flow.png" alt="Sales Flow">
-                        <img class="service-img service-img-m" src="/imagens/portfolio/sales-flow.png" alt="Sales Flow">
+                        <img class="service-img service-img-s" src="imagens/"portfolio/sales-flow.png" alt="Sales Flow">
+                        <img class="service-img service-img-m" src="imagens/"portfolio/sales-flow.png" alt="Sales Flow">
                       </div>
                     </div>
                   </div>
@@ -362,8 +369,8 @@
                         <p class="t-opposite" data-i18n="s2text">Next.js, React, Node, PostgreSQL, Supabase, Stripe — tecnologias que investidores e usuários confiam.</p>
                       </div>
                       <div class="services-stack__image">
-                        <img class="service-img service-img-s" src="/imagens/portfolio/voice-img.png" alt="Voice Report">
-                        <img class="service-img service-img-m" src="/imagens/portfolio/voice-img.png" alt="Voice Report">
+                        <img class="service-img service-img-s" src="imagens/"portfolio/voice-img.png" alt="Voice Report">
+                        <img class="service-img service-img-m" src="imagens/"portfolio/voice-img.png" alt="Voice Report">
                       </div>
                     </div>
                   </div>
@@ -386,8 +393,8 @@
                         <p data-i18n="s3text">Integração de pagamentos, onboarding otimizado e métricas de conversão embutidas no produto.</p>
                       </div>
                       <div class="services-stack__image">
-                        <img class="service-img service-img-s" src="/imagens/portfolio/salon-book-dashboard.png" alt="Salon Book">
-                        <img class="service-img service-img-m" src="/imagens/portfolio/salon-book-dashboard.png" alt="Salon Book">
+                        <img class="service-img service-img-s" src="imagens/"portfolio/salon-book-dashboard.png" alt="Salon Book">
+                        <img class="service-img service-img-m" src="imagens/"portfolio/salon-book-dashboard.png" alt="Salon Book">
                       </div>
                     </div>
                   </div>
@@ -477,7 +484,7 @@
                   </text>
                 </g>
               </svg>
-              <img class="btn-rotating__image" src="/imagens/nova-foto.png" alt="Daniel Lopes">
+              <img class="btn-rotating__image" src="imagens/"nova-foto.png" alt="Daniel Lopes">
             </a>
           </div>
           <div class="mxd-divider">
@@ -670,7 +677,7 @@
                 <div class="mxd-promo__content">
                   <p class="mxd-promo__title anim-uni-in-up">
                     <span class="mxd-promo__icon">
-                      <img src="/imagens/logo-menu.webp" alt="Lopes Web Studio">
+                      <img src="imagens/"logo-menu.webp" alt="Lopes Web Studio">
                     </span>
                     <span class="mxd-promo__caption reveal-type" data-i18n="ctaTitle">Pronto para construir seu app ou sistema?</span>
                   </p>
@@ -682,8 +689,8 @@
                   </div>
                 </div>
                 <div class="mxd-promo__images">
-                  <img class="promo-image promo-image-1" src="/imagens/portfolio/sales-flow.png" alt="Sales Flow">
-                  <img class="promo-image promo-image-2" src="/imagens/portfolio/voice-img.png" alt="Voice Report">
+                  <img class="promo-image promo-image-1" src="imagens/"portfolio/sales-flow.png" alt="Sales Flow">
+                  <img class="promo-image promo-image-2" src="imagens/"portfolio/voice-img.png" alt="Voice Report">
                 </div>
               </div>
             </div>
@@ -789,10 +796,10 @@
       <i class="ph ph-arrow-up"></i>
     </a>
 
-    <script src="/js/i18n.js"></script>
-    <script src="/js/libs.min.js"></script>
-    <script src="/js/app.js"></script>
-    <script src="/js/custom.js"></script>
+    <script src="js/"i18n.js"></script>
+    <script src="js/"libs.min.js"></script>
+    <script src="js/"app.js"></script>
+    <script src="js/"custom.js"></script>
     <script>
       const statsCounter1 = new countUp.CountUp("stats-counter-1", 12, optionsPlus);
       const statsCounter2 = new countUp.CountUp("stats-counter-2", 90, optionsPlus);
