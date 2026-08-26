@@ -260,18 +260,22 @@ html.i18n-pending body {
 }
 
 /* Fotos dos cards de servico: painel lateral, sem cobrir o texto */
+.services-stack__image {
+  -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+  min-height: 0;
+  margin-top: 1.2rem;
+  padding-bottom: 3rem;
+}
+
 .services-stack__image .service-img {
   display: block;
   width: 100%;
-  height: 20rem;
+  height: 100%;
+  min-height: 11rem;
+  max-height: 22rem;
   object-fit: cover;
   border-radius: var(--_radius-m);
-}
-
-@media only screen and (min-width: 768px) {
-  .services-stack__image .service-img {
-    height: 24rem;
-  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -281,6 +285,7 @@ html.i18n-pending body {
     right: 0;
     width: 34%;
     height: 100%;
+    margin-top: 0;
     padding: 4.2rem 4.2rem 4.6rem 0;
     z-index: 0;
     pointer-events: none;
