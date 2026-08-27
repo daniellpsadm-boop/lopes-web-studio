@@ -604,17 +604,17 @@ html.i18n-pending body {
   }
 }
 
-.testimonial-image-1 { background-image: url("../imagens/depoimentos/1.webp"); }
-.testimonial-image-2 { background-image: url("../imagens/depoimentos/2.webp"); }
-.testimonial-image-3 { background-image: url("../imagens/depoimentos/4.webp"); }
-.testimonial-image-4 { background-image: url("../imagens/depoimentos/5.webp"); }
+.lws-testimonials .lws-testimonial {
+  height: auto;
+  overflow: visible;
+  margin: 0;
+}
 
-.mxd-blog-preview__image.testimonial-image-1,
-.mxd-blog-preview__image.testimonial-image-2,
-.mxd-blog-preview__image.testimonial-image-3,
-.mxd-blog-preview__image.testimonial-image-4 {
-  background-size: cover;
-  background-position: center top;
+.lws-testimonial__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--_radius-l);
 }
 
 .lws-problem__num {
