@@ -510,7 +510,7 @@ html.i18n-pending body {
 }
 
 .divider-image-lopes {
-  background-image: url("../imagens/portfolio/sales-flow.png");
+  background-image: url("../imagens/portfolio/sales-flow.png?v=2");
   background-size: cover;
   background-position: center;
 }
