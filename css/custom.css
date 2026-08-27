@@ -450,7 +450,8 @@ html.i18n-pending body {
 .preview-image-voice,
 .preview-image-sales,
 .preview-image-salon,
-.preview-image-plan {
+.preview-image-plan,
+.preview-image-giro {
   background-image: none;
 }
 
