@@ -509,6 +509,12 @@ html.i18n-pending body {
   }
 }
 
+.services-stack__image .service-img--illustration {
+  object-fit: contain;
+  object-position: center;
+  background-color: #0b1428;
+}
+
 .divider-image-lopes {
   background-image: url("../imagens/portfolio/sales-flow.png?v=2");
   background-size: cover;
