@@ -191,7 +191,7 @@ html.i18n-pending body {
 
 .lws-project-desc {
   width: 100%;
-  max-width: 46rem;
+  max-width: 64rem;
   text-align: left;
   text-decoration: none;
 }
@@ -206,10 +206,38 @@ html.i18n-pending body {
 }
 
 .lws-project-desc__text {
-  margin: 0;
+  margin: 0 0 1.6rem;
   font-size: 1.5rem;
   line-height: 1.6;
   color: var(--t-opp-medium);
+}
+
+.lws-project-desc__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.lws-project-desc__list li {
+  position: relative;
+  padding-left: 1.6rem;
+  font-size: 1.45rem;
+  line-height: 1.55;
+  color: var(--t-opp-medium);
+}
+
+.lws-project-desc__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--accent);
 }
 
 @media only screen and (min-width: 768px) {
@@ -226,30 +254,22 @@ html.i18n-pending body {
 
 @media only screen and (min-width: 1200px) {
   .mxd-project-item__preview {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 3.6rem;
+    justify-content: flex-start;
+    gap: 3.2rem;
     padding: 3.6rem 4rem 11rem;
   }
   .lws-project-shot {
     flex: 0 1 auto;
   }
   .lws-project-desc {
-    flex: 0 1 32rem;
+    flex: 0 0 auto;
+    max-width: 64rem;
+    align-self: stretch;
   }
   .mxd-project-item__preview img {
     max-height: 62vh;
-  }
-  /* screenshot em paisagem: descricao abaixo, para o dashboard nao encolher */
-  .mxd-project-item__preview.preview-image-sales {
-    flex-direction: column;
-    gap: 2.8rem;
-  }
-  .preview-image-sales .lws-project-desc {
-    flex: 0 0 auto;
-    max-width: 64rem;
-    align-self: flex-start;
   }
 }
 
