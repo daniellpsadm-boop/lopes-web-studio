@@ -83,6 +83,69 @@ html.i18n-pending body {
   outline-offset: 2px;
 }
 
+.mxd-header {
+  align-items: center;
+}
+
+.mxd-header__controls {
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.mxd-header__logo {
+  min-width: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .mxd-logo__brand {
+    height: 2.6rem;
+    max-width: 10rem;
+  }
+
+  .mxd-header__controls {
+    gap: 0.15rem;
+  }
+
+  .mxd-header .btn-mobile-icon {
+    display: none;
+  }
+
+  .mxd-color-switcher {
+    width: 4rem;
+    height: 4rem;
+    flex-shrink: 0;
+  }
+
+  .lws-langs {
+    gap: 0;
+    margin-right: 0;
+    padding: 0.14rem;
+  }
+
+  .lws-langs a {
+    font-size: 1.05rem;
+    letter-spacing: 0.03em;
+    padding: 0.48rem 0.58rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .mxd-logo__brand {
+    height: 2.4rem;
+    max-width: 8.8rem;
+  }
+
+  .mxd-color-switcher {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+
+  .lws-langs a {
+    font-size: 1rem;
+    padding: 0.4rem 0.46rem;
+  }
+}
+
 .mxd-hero__mark .mark-icon {
   background-color: var(--accent);
 }
