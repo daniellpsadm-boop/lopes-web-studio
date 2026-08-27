@@ -30,15 +30,22 @@ html.i18n-pending body {
 
 .mxd-logo__brand {
   display: block;
-  height: 3.2rem;
+  height: 5.6rem;
   width: auto;
-  max-width: 16rem;
+  max-width: 28rem;
   object-fit: contain;
 }
 
 @media only screen and (min-width: 768px) {
   .mxd-logo__brand {
-    height: 3.8rem;
+    height: 7.2rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .mxd-logo__brand {
+    height: 8.4rem;
+    max-width: 34rem;
   }
 }
 
@@ -98,8 +105,8 @@ html.i18n-pending body {
 
 @media only screen and (max-width: 767px) {
   .mxd-logo__brand {
-    height: 2.6rem;
-    max-width: 10rem;
+    height: 4.4rem;
+    max-width: 18rem;
   }
 
   .mxd-header__controls {
@@ -131,8 +138,8 @@ html.i18n-pending body {
 
 @media only screen and (max-width: 360px) {
   .mxd-logo__brand {
-    height: 2.4rem;
-    max-width: 8.8rem;
+    height: 3.8rem;
+    max-width: 15rem;
   }
 
   .mxd-color-switcher {
