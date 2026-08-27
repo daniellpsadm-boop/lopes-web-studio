@@ -457,6 +457,23 @@ html.i18n-pending body {
   }
 }
 
+/* Space between the problem columns and the studio manifesto */
+.lws-problem-to-manifest {
+  padding-top: 8.1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .lws-problem-to-manifest {
+    padding-top: 10.8rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .lws-problem-to-manifest {
+    padding-top: 13rem;
+  }
+}
+
 .footer-wordmark {
   display: block;
   width: 100%;
