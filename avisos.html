@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR" color-scheme="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Alertas de visita — Lopes Web Studio</title>
+    <link rel="icon" href="imagens/logo-menu.webp" type="image/webp">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#161616">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <script>
+      (function () {
+        var p = location.pathname;
+        var base = p.indexOf("/lopes-web-studio") === 0 ? "/lopes-web-studio/" : "/";
+        document.write('<base href="' + base + '">');
+      })();
+    </script>
+    <link rel="stylesheet" href="css/avisos.css">
+  </head>
+  <body>
+    <main class="avisos">
+      <p class="avisos__kicker">Lopes Web Studio</p>
+      <h1>Alertas de visita</h1>
+      <p class="avisos__lead">Quando alguém abrir o site, este aparelho recebe uma notificação — mesmo com a aba fechada.</p>
+
+      <p id="avisos-status" class="avisos__status" data-kind="info">Carregando…</p>
+      <p id="avisos-token-hint" class="avisos__hint" hidden>Use o link secreto que termina com <code>#seu-token</code>.</p>
+
+      <div class="avisos__actions">
+        <button type="button" id="avisos-enable" class="avisos__btn">Ativar notificações</button>
+        <button type="button" id="avisos-disable" class="avisos__btn avisos__btn--ghost" hidden>Desativar neste aparelho</button>
+      </div>
+
+      <section class="avisos__panel">
+        <h2>Visitas ao vivo</h2>
+        <ul id="avisos-feed" class="avisos__feed">
+          <li data-empty>Aguardando a próxima visita…</li>
+        </ul>
+      </section>
+
+      <p class="avisos__note">No iPhone: Adicionar à Tela de Início, abrir este app e então ativar. Chrome/Edge no Android e no desktop funcionam direto.</p>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/lws-notify-config.js"></script>
+    <script src="js/push-admin.js"></script>
+  </body>
+</html>

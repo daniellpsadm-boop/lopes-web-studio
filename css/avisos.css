@@ -1,0 +1,107 @@
+:root {
+  --ink: #161616;
+  --paper: #f4efe8;
+  --muted: #9a938a;
+  --orange: #f07028;
+  --line: rgba(255, 255, 255, 0.08);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+.avisos {
+  width: min(40rem, calc(100% - 2.4rem));
+  margin: 0 auto;
+  padding: 4.8rem 0 6rem;
+}
+
+.avisos__kicker {
+  margin: 0 0 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: var(--orange);
+}
+
+h1 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  letter-spacing: -0.04em;
+}
+
+.avisos__lead,
+.avisos__note,
+.avisos__hint {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.avisos__status {
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.avisos__status[data-kind="ok"] { border-color: color-mix(in srgb, var(--orange) 55%, transparent); color: #ffd2b8; }
+.avisos__status[data-kind="error"] { border-color: #c45c5c; color: #f3b4b4; }
+
+.avisos__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1.4rem 0 2rem;
+}
+
+.avisos__btn {
+  appearance: none;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.9rem 1.4rem;
+  background: var(--orange);
+  color: #1a0d06;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.avisos__btn--ghost {
+  background: transparent;
+  color: var(--paper);
+  border: 1px solid var(--line);
+}
+
+.avisos__btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+.avisos__panel {
+  border: 1px solid var(--line);
+  border-radius: 1.1rem;
+  padding: 1.2rem 1.2rem 0.4rem;
+}
+
+.avisos__panel h2 {
+  margin: 0 0 0.8rem;
+  font-size: 1rem;
+}
+
+.avisos__feed {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.avisos__feed li {
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.92rem;
+  color: #ddd6cc;
+}
+
+.avisos__note { margin-top: 1.8rem; font-size: 0.86rem; }
+code { color: #ffd2b8; }
