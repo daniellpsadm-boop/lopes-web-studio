@@ -31,6 +31,7 @@
     body: JSON.stringify({
       action: "visit",
       path: location.pathname + location.search,
+      url: location.origin + location.pathname + location.search,
       referrer: referrerHost,
       locale: document.documentElement.getAttribute("data-locale") || document.documentElement.lang || "",
       userAgent: ua.slice(0, 180),

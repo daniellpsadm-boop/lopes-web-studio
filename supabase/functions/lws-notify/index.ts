@@ -12,11 +12,32 @@ const DEDUPE_MINUTES = 25;
 
 type VisitPayload = {
   path?: string;
+  url?: string;
   referrer?: string;
   locale?: string;
   userAgent?: string;
   sessionId?: string;
 };
+
+function visitedUrl(body: VisitPayload) {
+  const candidates = [String(body.url || ""), String(body.path || "")];
+  for (const raw of candidates) {
+    const value = raw.slice(0, 400);
+    try {
+      const parsed = new URL(value);
+      if (parsed.protocol !== "https:" && parsed.protocol !== "http:") continue;
+      if (/avisos\.html/i.test(parsed.pathname)) return "";
+      return parsed.origin + parsed.pathname + parsed.search;
+    } catch {
+      // relative path — try next or compose below
+    }
+  }
+  const path = String(body.path || "/").slice(0, 300);
+  if (/avisos\.html/i.test(path)) return "";
+  const origin = "https://dev.lopeswebstudio.com.br";
+  const rel = path.startsWith("/") ? path : `/${path}`;
+  return origin + rel;
+}
 
 function json(body: unknown, status = 200) {
   return new Response(JSON.stringify(body), {
@@ -75,13 +96,13 @@ async function assertAdmin(req: Request, client: SupabaseClient, bodyToken?: str
 }
 
 function visitMessage(row: { id?: string | null; path?: string | null; referrer?: string | null; visited_at?: string | null }) {
-  const path = row.path || "/";
-  const from = row.referrer ? ` via ${row.referrer}` : "";
+  const pageUrl = row.path || "https://dev.lopeswebstudio.com.br/";
+  const from = row.referrer ? `\nvia ${row.referrer}` : "";
   return {
     id: row.id,
     title: "Visita no site",
-    body: `Alguém abriu ${path}${from}`,
-    url: "https://dev.lopeswebstudio.com.br",
+    body: pageUrl + from,
+    url: pageUrl,
     path: row.path,
     referrer: row.referrer,
     visited_at: row.visited_at || new Date().toISOString(),
@@ -147,8 +168,9 @@ async function handleVisit(client: SupabaseClient, body: VisitPayload) {
   const ua = String(body.userAgent || "");
   if (BOT_RE.test(ua)) return json({ ok: true, skipped: "bot" });
 
-  const path = String(body.path || "/").slice(0, 300);
-  if (/avisos\.html/i.test(path)) return json({ ok: true, skipped: "admin" });
+  const pageUrl = visitedUrl(body);
+  if (!pageUrl) return json({ ok: true, skipped: "admin" });
+  const path = pageUrl;
 
   const sessionId = String(body.sessionId || "").slice(0, 80);
   if (sessionId) {

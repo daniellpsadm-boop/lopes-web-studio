@@ -52,9 +52,9 @@
   function visitLabel(item) {
     var when = item.visited_at ? new Date(item.visited_at) : new Date();
     var time = when.toLocaleString("pt-BR", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
-    var path = item.path || "/";
+    var pageUrl = item.path || item.url || "/";
     var from = item.referrer ? " via " + item.referrer : "";
-    return time + " · " + path + from;
+    return time + " · " + pageUrl + from;
   }
 
   var seen = {};

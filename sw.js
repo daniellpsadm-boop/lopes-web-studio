@@ -33,7 +33,7 @@ self.addEventListener("push", function (event) {
         icon: "imagens/logo-menu.webp",
         badge: "img/favicon/android-icon-192.png",
         lang: "pt-BR",
-        data: { url: data.url || "/" },
+        data: { url: data.url || data.path || "/" },
       });
     })()
   );
