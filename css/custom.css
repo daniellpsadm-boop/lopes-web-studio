@@ -455,23 +455,6 @@ html.i18n-pending body {
   background-image: none;
 }
 
-.mxd-project-item__name > span.anim-uni-in-up {
-  display: inline;
-  font: normal var(--fw-regular) 2.2rem/1.4 var(--_font-accent);
-  color: var(--t-medium);
-}
-
-.mxd-project-item__name > span.anim-uni-in-up > span {
-  font-weight: var(--fw-medium);
-  color: var(--t-bright);
-}
-
-@media only screen and (min-width: 768px) {
-  .mxd-project-item__name > span.anim-uni-in-up {
-    font-size: 3rem;
-  }
-}
-
 /* Fotos dos cards de servico: painel lateral, sem cobrir o texto */
 .services-stack__image {
   -ms-flex: 1 1 auto;
