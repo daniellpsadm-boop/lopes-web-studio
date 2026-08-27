@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" dir="ltr" class="i18n-pending">
+<html lang="pt-BR" dir="ltr" class="i18n-pending" color-scheme="dark">
 
   <head>
     <meta charset="UTF-8">
@@ -8,6 +8,12 @@
     <meta name="author" content="Lopes Web Studio">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <script>
+      (function () {
+        var saved = localStorage.getItem("template.theme");
+        document.documentElement.setAttribute("color-scheme", saved === "light" ? "light" : "dark");
+      })();
+    </script>
     <script>
       (function () {
         var p = location.pathname;
@@ -25,8 +31,7 @@
     <link rel="stylesheet" type="text/css" href="css/plugins.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css?v=23">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FAF7F6">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#161616">
+    <meta name="theme-color" content="#161616">
     <meta name="msapplication-navbutton-color" content="#161616">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
