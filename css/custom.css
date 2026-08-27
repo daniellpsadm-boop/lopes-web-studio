@@ -255,7 +255,7 @@ html.i18n-pending body {
   align-items: center;
   justify-content: center;
   gap: 2.4rem;
-  padding: 2.4rem 2.4rem 8.5rem;
+  padding: 2.4rem 2.4rem 11rem;
   background-color: var(--base-opp-tint);
   background-image: none;
   overflow: hidden;
@@ -330,9 +330,72 @@ html.i18n-pending body {
   background: var(--accent);
 }
 
+.lws-project-shot a {
+  display: flex;
+  max-width: 100%;
+}
+
+.lws-project-site {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem 1.2rem;
+  margin-top: 2rem;
+  padding: 1rem 1.4rem 1rem 1.6rem;
+  border: 1px solid var(--accent);
+  border-radius: 100px;
+  text-decoration: none;
+  background: rgba(var(--accent-rgb), 0.12);
+  color: var(--t-opp-bright);
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.lws-project-site__label {
+  font: normal 700 1.1rem/1 var(--_font-accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.lws-project-site__host {
+  font-size: 1.45rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--t-opp-bright);
+}
+
+.lws-project-site i {
+  font-size: 1.5rem;
+  color: var(--accent);
+}
+
+.lws-project-site:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .lws-project-site:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .lws-project-site:hover .lws-project-site__label,
+  .lws-project-site:hover .lws-project-site__host,
+  .lws-project-site:hover i {
+    color: var(--lws-ink);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lws-project-site {
+    transition: none;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .mxd-project-item__preview {
-    padding: 3.2rem 3.2rem 11rem;
+    padding: 3.2rem 3.2rem 13rem;
   }
   .mxd-project-item__preview img {
     max-height: 64vh;
@@ -348,7 +411,7 @@ html.i18n-pending body {
     align-items: center;
     justify-content: flex-start;
     gap: 3.2rem;
-    padding: 3.6rem 4rem 11rem;
+    padding: 3.6rem 4rem 13rem;
   }
   .lws-project-shot {
     flex: 0 1 auto;
