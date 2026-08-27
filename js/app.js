@@ -1428,9 +1428,9 @@ SVGInjector(mySVGsToInject, injectorOptions, function (totalSVGsInjected) {
 // --------------------------------------------- //
 const themeBtn = document.querySelector('#color-switcher');
 function getCurrentTheme(){
-  let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  localStorage.getItem('template.theme') ? theme = localStorage.getItem('template.theme') : null;
-  return theme;
+  const saved = localStorage.getItem('template.theme');
+  if (saved === 'light' || saved === 'dark') return saved;
+  return 'dark';
 }
 function loadTheme(theme){
   const root = document.querySelector(':root');
@@ -1440,6 +1440,9 @@ function loadTheme(theme){
     themeBtn.innerHTML = `<i class="ph-bold ph-sun-horizon"></i>`;
   }
   root.setAttribute('color-scheme', `${theme}`);
+  themeBtn.setAttribute('aria-checked', theme === 'dark' ? 'true' : 'false');
+  const themeColor = document.querySelector('meta[name="theme-color"]');
+  if (themeColor) themeColor.setAttribute('content', theme === 'light' ? '#FAF7F6' : '#161616');
 };
 themeBtn.addEventListener('click', () => {
   let theme = getCurrentTheme();
