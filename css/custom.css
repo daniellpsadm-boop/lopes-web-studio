@@ -45,22 +45,42 @@ html.i18n-pending body {
 .lws-langs {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.2rem;
   margin-right: 0.4rem;
+  padding: 0.28rem;
+  border: 1px solid rgba(var(--accent-rgb), 0.55);
+  border-radius: 999px;
+  background: rgba(var(--accent-rgb), 0.12);
 }
 
 .lws-langs a {
-  font: normal 1.3rem/1 var(--_font-accent);
-  letter-spacing: 0.04em;
-  color: var(--t-medium);
-  padding: 0.6rem 0.8rem;
+  font: 700 1.22rem/1 var(--_font-accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--t-bright);
+  padding: 0.72rem 1.05rem;
   border-radius: 999px;
   text-decoration: none;
+  opacity: 0.62;
+  transition: color var(--_animspeed-fast) var(--_animbezier),
+    background-color var(--_animspeed-fast) var(--_animbezier),
+    opacity var(--_animspeed-fast) var(--_animbezier);
 }
 
-.lws-langs a.is-active,
 .lws-langs a:hover {
+  opacity: 1;
   color: var(--accent);
+}
+
+.lws-langs a.is-active {
+  opacity: 1;
+  color: var(--lws-ink);
+  background: var(--accent);
+}
+
+.lws-langs a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .mxd-hero__mark .mark-icon {

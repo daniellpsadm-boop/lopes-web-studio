@@ -325,7 +325,10 @@
   });
 
   document.querySelectorAll(".lws-langs a").forEach(function (a) {
-    a.classList.toggle("is-active", a.getAttribute("data-lang") === locale);
+    var active = a.getAttribute("data-lang") === locale;
+    a.classList.toggle("is-active", active);
+    if (active) a.setAttribute("aria-current", "true");
+    else a.removeAttribute("aria-current");
   });
 
   if (t.metaTitle) document.title = t.metaTitle;
